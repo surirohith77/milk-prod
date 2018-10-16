@@ -1,0 +1,78 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/et1"
+    android:hint="email"
+    android:inputType="textWebEmailAddress"
+    android:layout_marginTop="20dp"
+    android:ems="15"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:hint="password"
+        android:inputType="text"
+        android:ems="15"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:orientation="horizontal"
+        >
+<Button
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:onClick="Login"
+    android:layout_marginRight="5dp"
+    />
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:onClick="Regiseer"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:orientation="horizontal"
+        >
+        <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Delete user"
+        android:onClick="Delete"
+        />
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="View users"
+            android:onClick="viewuser"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update user"
+            android:onClick="updateuser"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pb"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+</LinearLayout>
